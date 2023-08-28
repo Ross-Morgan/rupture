@@ -1,0 +1,11 @@
+[package]
+name = "rupture"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argon2 = { version = "0.5.1", features = ["password-hash"] }
+clap = { version = "4.3.23", features = ["derive"] }
+thiserror = "1.0.47"
