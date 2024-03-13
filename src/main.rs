@@ -1,9 +1,5 @@
-use std::{ffi::OsString, path::PathBuf};
+use rupture::{juncture_file, rupture_file, Result}
 
-use rupture::{const_split_file, RuptureError};
+fn main() ->  {
 
-fn main() -> Result<(), RuptureError> {
-    const_split_file::<512>(PathBuf::from("./large-file.txt"), OsString::from("file"))?;
-
-    Ok(())
 }
