@@ -18,6 +18,11 @@ const fn bytes_to_num(bytes: [u8; 8]) -> u64 {
     u64::from_be_bytes(bytes)
 }
 
+fn array_from_slice<T: Copy, const N: usize>(slice: &[T]) -> [T; N] {
+    let mut i = slice.iter();
+    [(); N].map(|_| *i.next().unwrap())
+}
+
 pub mod prelude {
     use super::*;
 

@@ -10,3 +10,4 @@ argon2 = { version = "0.5.1", features = ["password-hash"] }
 clap = { version = "4.3.23", features = ["derive"] }
 thiserror = "1.0.47"
 glob = "0.3.1"
+rand = "0.8.5"
